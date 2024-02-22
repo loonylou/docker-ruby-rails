@@ -1,0 +1,26 @@
+services:
+  db:
+    container_name: "myapp_db"
+    image: mariadb
+    ports:
+      - "33306:3306"
+    environment:
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 'yes'
+    volumes:
+      - "mariadb:/var/lib/mysql"
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin
+    container_name: "myapp_phpmyadmin"
+    ports:
+      - "3001:80"
+    environment:
+      PMA_HOSTS: db
+      PMA_USER: root
+      PMA_PASSWORD: ""
+
+volumes:
+  mariadb:
+    name: "myapp_db"

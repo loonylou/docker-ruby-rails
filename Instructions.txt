@@ -17,3 +17,4 @@ This README will be overwritten once you start
 * replace database.yml with actual_database.yml
 * docker compose run web rake db:create
 * visit localhost:3000
+* delete instructions.txt
