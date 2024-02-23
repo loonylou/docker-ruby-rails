@@ -20,3 +20,6 @@ The README will be overwritten once you start. See instructions.txt.
 * docker compose up
 * visit localhost:3000
 * delete instructions.txt & actual_database.yml
+
+# Source
+https://github.com/docker/awesome-compose/blob/e6b1d2755f2f72a363fc346e52dce10cace846c8/official-documentation-samples/rails/README.md
