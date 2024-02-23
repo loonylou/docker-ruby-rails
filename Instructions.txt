@@ -14,6 +14,7 @@ The README will be overwritten once you start. See instructions.txt.
 * docker compose run --no-deps web rails new . --force --database=mysql
 * docker compose build
 * in actual_database.yml rename the databases as required
+* in docker-compose.yml rename the app as required
 * replace database.yml with actual_database.yml
 * docker compose run web rake db:create
 * docker compose up
