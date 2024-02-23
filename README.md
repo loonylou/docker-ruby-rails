@@ -11,9 +11,10 @@ phpmyadmin: myapp_phpmyadmin
 This README will be overwritten once you start
 
 # Build
-* docker compose run --no-deps web rails new . --force --database=postgresql
+* docker compose run --no-deps web rails new . --force --database=mysql
 * docker compose build
-* docker compose up
 * replace database.yml with actual_database.yml
 * docker compose run web rake db:create
+* docker compose up
 * visit localhost:3000
+* delete instructions.txt

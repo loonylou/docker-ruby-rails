@@ -1,6 +1,6 @@
 default: &default
-  adapter: mariadb
-  encoding: unicode
+  adapter: mysql2
+  encoding: utf8
   host: db
   username: root
   password: ""
